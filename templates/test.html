@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+<div class="jumbotron">
+<div class="container">
+  <h1>You are now logged in!</h1>
+  {% if user.is_authenticated %}
+  <h1> Welcome {{ user.username }}</h1>
+  <script>alert('Thank You for Registering')</script>
+  {% endif %}
+</div>
+</div>
+
+
+{% endblock %}
